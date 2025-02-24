@@ -1,7 +1,12 @@
-document.getElementById('alertBtn').addEventListener('click', function() {
+document.getElementById('alertBtn')?.addEventListener('click', function() {
     alert('Hello from JavaScript!');
 });
 
-document.getElementById('helloBtn').addEventListener('click', function() {
+document.getElementById('helloBtn')?.addEventListener('click', function() {
     confirm("world")
 });
+
+document.getElementById('homeBtn')?.addEventListener('click', function() {
+    window.location.href = "/"
+});
+
