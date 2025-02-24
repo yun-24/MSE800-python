@@ -14,5 +14,9 @@ def second():
 def great(name):
     return f"{name}, have a nice day."
 
+@app.route('/<name>/<int:hour>')
+def learn(name, hour):
+    return f"{name} learns at {hour}."
+
 if __name__ == '__main__':
     app.run(debug=True)
