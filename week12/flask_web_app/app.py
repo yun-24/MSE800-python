@@ -10,5 +10,9 @@ def home():
 def second():
     return render_template('second.html')
 
+@app.route('/great/<name>')
+def great(name):
+    return f"{name}, have a nice day."
+
 if __name__ == '__main__':
     app.run(debug=True)
